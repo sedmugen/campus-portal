@@ -12,8 +12,23 @@
 
 ## 2. Visuals & Preview
 
-### Application Dashboard & Notice Board
-![Campus Portal Dashboard](assets/images/dashboard-preview.png)
+### Application Dashboard Overview
+![Campus Portal Desktop Dashboard](assets/images/dashboard-preview.png)
+
+<div align="center">
+  <table width="100%">
+    <tr>
+      <td width="50%" align="center">
+        <strong>Service Health Monitor</strong><br/>
+        <img src="assets/images/service-health-preview.png" alt="Service Health Monitor" width="100%" />
+      </td>
+      <td width="50%" align="center">
+        <strong>Mobile Responsive Layout</strong><br/>
+        <img src="assets/images/mobile-preview.png" alt="Mobile Viewport Preview" width="60%" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 ### Three-Tier System Architecture
 ![System Architecture Diagram](assets/images/architecture-diagram.png)
