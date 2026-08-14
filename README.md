@@ -64,7 +64,7 @@ This project was built to demonstrate enterprise Java full-stack patterns, clean
 
 ---
 
-## 6. Architecture Overview
+## 6. Architecture & Documentation Directory
 
 ```mermaid
 graph LR
@@ -92,52 +92,41 @@ graph LR
     end
 ```
 
-For in-depth architectural details, database schemas, and design decisions, refer to:
-- [System Architecture Documentation](docs/architecture.md)
-- [REST API Specification](docs/api.md)
-- [Architecture Decision Records (ADRs)](docs/decisions.md)
+### Complete Documentation Suite
+- 📖 [Setup & Installation Guide](docs/setup.md) — Step-by-step local workstation setup & troubleshooting.
+- 📐 [System Architecture Documentation](docs/architecture.md) — Tier architecture, Spring DI design, and schemas.
+- 🔌 [REST API Specification](docs/api.md) — Full endpoint reference with JSON payloads and error codes.
+- 🛠️ [Developer & Contribution Guide](docs/development.md) — Code style, testing guidelines, and commit standards.
+- 📑 [Architecture Decision Records (ADRs)](docs/decisions.md) — Technical rationale and trade-off records.
 
 ---
 
-## 7. Installation & Setup
+## 7. Installation & Quickstart
 
 ### Prerequisites
 - **Java**: JDK 17 or higher
 - **Node.js**: Node 18+ and npm 9+
-- **Database (Optional for dev)**: MySQL 8.x (or run with H2 in test mode)
+- **Database**: MySQL 8.x (optional; test profile runs in-memory via H2)
 
-### 1. Clone the Repository
 ```bash
+# 1. Clone the repository
 git clone https://github.com/sedmugen/campus-portal.git
 cd campus-portal
-```
 
-### 2. Configure Environment Variables
-Copy the template configuration:
-```bash
+# 2. Configure environment variables
 cp .env.example .env
-```
 
-### 3. Start the Backend Server
-```bash
+# 3. Start Backend (in server/)
 cd server
-
-# Run with Maven Wrapper (Windows)
-.\mvnw.cmd spring-boot:run
-
-# Run with Maven Wrapper (Linux/macOS)
 ./mvnw spring-boot:run
-```
-*Backend server runs on `http://localhost:8080`.*
 
-### 4. Start the Frontend Client
-In a new terminal:
-```bash
-cd client
+# 4. Start Frontend (in client/)
+cd ../client
 npm install
 npm start
 ```
-*Frontend application opens automatically at `http://localhost:3000`.*
+*Backend runs on `http://localhost:8080` and frontend runs on `http://localhost:3000`.*  
+*For in-depth troubleshooting, see the [Setup Guide](docs/setup.md).*
 
 ---
 
