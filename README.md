@@ -1,42 +1,23 @@
-# Campus Portal
-
-> A modern, full-stack campus communication and service health monitoring platform built with **Spring Boot 3**, **React 19**, and **MySQL**.
-
-[![CI Build](https://github.com/sedmugen/campus-portal/actions/workflows/ci.yml/badge.svg)](https://github.com/sedmugen/campus-portal/actions)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.7-brightgreen.svg?logo=springboot)](https://spring.io/projects/spring-boot)
-[![React](https://img.shields.io/badge/React-19.2.0-blue.svg?logo=react)](https://react.dev/)
-[![Java](https://img.shields.io/badge/Java-17%20LTS-orange.svg?logo=openjdk)](https://openjdk.org/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.8-purple.svg?logo=bootstrap)](https://getbootstrap.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
----
-
-## 2. Visuals & Preview
-
-### Application Dashboard Overview
-![Campus Portal Desktop Dashboard](assets/images/dashboard-preview.png)
-
 <div align="center">
-  <table width="100%">
-    <tr>
-      <td width="50%" align="center">
-        <strong>Service Health Monitor</strong><br/>
-        <img src="assets/images/service-health-preview.png" alt="Service Health Monitor" width="100%" />
-      </td>
-      <td width="50%" align="center">
-        <strong>Mobile Responsive Layout</strong><br/>
-        <img src="assets/images/mobile-preview.png" alt="Mobile Viewport Preview" width="60%" />
-      </td>
-    </tr>
-  </table>
+  <img src="assets/images/banner.png" alt="Campus Portal Banner" width="100%" />
+
+  # Campus Portal
+
+  <p>A modern, full-stack campus communication and service health monitoring platform built with <strong>Spring Boot 3</strong>, <strong>React 19</strong>, and <strong>MySQL</strong>.</p>
+
+  <p>
+    <a href="https://github.com/sedmugen/campus-portal/actions"><img src="https://github.com/sedmugen/campus-portal/actions/workflows/ci.yml/badge.svg" alt="CI Build" /></a>
+    <a href="https://spring.io/projects/spring-boot"><img src="https://img.shields.io/badge/Spring%20Boot-3.5.7-brightgreen.svg?logo=springboot" alt="Spring Boot" /></a>
+    <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.2.0-blue.svg?logo=react" alt="React" /></a>
+    <a href="https://openjdk.org/"><img src="https://img.shields.io/badge/Java-17%20LTS-orange.svg?logo=openjdk" alt="Java" /></a>
+    <a href="https://getbootstrap.com/"><img src="https://img.shields.io/badge/Bootstrap-5.3.8-purple.svg?logo=bootstrap" alt="Bootstrap" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
+  </p>
 </div>
 
-### Three-Tier System Architecture
-![System Architecture Diagram](assets/images/architecture-diagram.png)
-
 ---
 
-## 3. Overview & Motivation
+## 1. Overview & Motivation
 
 Educational institutions require reliable, centralized channels to broadcast critical academic schedules, administrative updates, and event notices while continuously monitoring the availability of connected campus services.
 
@@ -49,7 +30,7 @@ This project was built to demonstrate enterprise Java full-stack patterns, clean
 
 ---
 
-## 4. Features
+## 2. Features
 
 ### Frontend (React 19 SPA)
 - **Interactive Notice Publishing**: Clean form with instant validation, character bounds, and responsive success/error alerts.
@@ -68,19 +49,19 @@ This project was built to demonstrate enterprise Java full-stack patterns, clean
 
 ---
 
-## 5. Tech Stack
+## 3. Tech Stack
 
 | Layer | Technologies | Purpose |
 | :--- | :--- | :--- |
 | **Frontend** | React 19, React-Bootstrap, HTML5/CSS3 | Component-driven presentation & state management |
 | **Backend** | Java 17 LTS, Spring Boot 3.5.7 | REST API, validation, dependency injection & business logic |
 | **Persistence** | Spring Data JPA, Hibernate 6, MySQL 8.x | Object-relational mapping & relational data storage |
-| **Testing** | JUnit 5, MockMvc, H2 Database | Integration testing with zero external dependencies |
+| **Testing** | JUnit 5, MockMvc, React Testing Library, H2 Database | Integration testing with zero external dependencies |
 | **Build & Tooling** | Maven Wrapper (`mvnw`), npm | Dependency management, bundling & continuous integration |
 
 ---
 
-## 6. Architecture & Documentation Directory
+## 4. System Architecture
 
 ```mermaid
 graph LR
@@ -108,6 +89,10 @@ graph LR
     end
 ```
 
+<div align="center">
+  <img src="assets/images/architecture-diagram.png" alt="Three-Tier System Architecture" width="85%" />
+</div>
+
 ### Complete Documentation Suite
 - 📖 [Setup & Installation Guide](docs/setup.md) — Step-by-step local workstation setup & troubleshooting.
 - 📐 [System Architecture Documentation](docs/architecture.md) — Tier architecture, Spring DI design, and schemas.
@@ -117,7 +102,7 @@ graph LR
 
 ---
 
-## 7. Installation & Quickstart
+## 5. Installation & Quickstart
 
 ### Prerequisites
 - **Java**: JDK 17 or higher
@@ -146,7 +131,7 @@ npm start
 
 ---
 
-## 8. Usage Guide
+## 6. Usage Guide
 
 1. **View Campus Notices**: Navigate to `http://localhost:3000/#notices` to see active announcements.
 2. **Publish an Announcement**: Fill in the title and description under **Publish New Notice** and click **Publish Notice**.
@@ -155,7 +140,7 @@ npm start
 
 ---
 
-## 9. Roadmap
+## 7. Roadmap
 
 - [ ] **Role-Based Authentication**: Spring Security 6 with JWT authentication for Administrator, Faculty, and Student roles.
 - [ ] **Notice Categories & Search**: Category tags (Urgent, Academic, Events, Facility) with full-text search filtering.
@@ -164,7 +149,7 @@ npm start
 
 ---
 
-## 10. License & Attribution
+## 8. License & Attribution
 
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 
