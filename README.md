@@ -2,6 +2,7 @@
 
 > A modern, full-stack campus communication and service health monitoring platform built with **Spring Boot 3**, **React 19**, and **MySQL**.
 
+[![CI Build](https://github.com/sedmugen/campus-portal/actions/workflows/ci.yml/badge.svg)](https://github.com/sedmugen/campus-portal/actions)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.7-brightgreen.svg?logo=springboot)](https://spring.io/projects/spring-boot)
 [![React](https://img.shields.io/badge/React-19.2.0-blue.svg?logo=react)](https://react.dev/)
 [![Java](https://img.shields.io/badge/Java-17%20LTS-orange.svg?logo=openjdk)](https://openjdk.org/)

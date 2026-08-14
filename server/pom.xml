@@ -6,29 +6,34 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.5.7</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
-    <groupId>com.campusportal</groupId>
+    <groupId>com.saad.campusportal</groupId>
     <artifactId>campusportal</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>campusportal</name>
-    <description>campusportal</description>
-    <url/>
+    <version>1.0.0</version>
+    <name>Campus Portal</name>
+    <description>Full-Stack Campus Communication and Service Health Monitoring Platform</description>
+    <url>https://github.com/sedmugen/campus-portal</url>
+
     <licenses>
-        <license/>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
     </licenses>
+
     <developers>
-        <developer/>
+        <developer>
+            <id>sedmugen</id>
+            <name>Saad</name>
+            <url>https://github.com/sedmugen</url>
+        </developer>
     </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
+
     <properties>
         <java.version>17</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -93,5 +98,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
