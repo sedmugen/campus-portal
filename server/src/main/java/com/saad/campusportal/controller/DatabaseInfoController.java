@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Controller exposing active runtime Spring profiles and database configuration metadata.
+ */
 @RestController
 @RequestMapping("/api/dbinfo")
 public class DatabaseInfoController {

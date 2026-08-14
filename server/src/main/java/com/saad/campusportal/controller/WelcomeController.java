@@ -10,27 +10,25 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Controller demonstrating Spring Dependency Injection patterns
+ * (Field, Constructor, and Setter Injection) and Bean qualification.
+ */
 @RestController
 @RequestMapping("/api/welcome")
 public class WelcomeController {
 
-    // 1. Field Injection (using @Primary bean - StudentMessageService)
     @Autowired
     private MessageService fieldInjectedService;
 
-    // 2. Constructor Injection (using @Qualifier to specify AdminMessageService)
     private final MessageService constructorInjectedService;
-
-    // 3. Setter Injection (will be set via setter method)
     private MessageService setterInjectedService;
 
-    // Constructor for Constructor Injection
     @Autowired
     public WelcomeController(@Qualifier("adminMessageService") MessageService constructorInjectedService) {
         this.constructorInjectedService = constructorInjectedService;
     }
 
-    // Setter for Setter Injection
     @Autowired
     public void setSetterInjectedService(@Qualifier("studentMessageService") MessageService setterInjectedService) {
         this.setterInjectedService = setterInjectedService;
