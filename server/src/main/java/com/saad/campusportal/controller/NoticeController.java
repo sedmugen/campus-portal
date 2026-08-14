@@ -13,12 +13,10 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/notice")
-@CrossOrigin(origins = "http://localhost:3000") // Allow React frontend
 public class NoticeController {
 
     private final NoticeService noticeService;
 
-    // Constructor injection
     public NoticeController(NoticeService noticeService) {
         this.noticeService = noticeService;
     }
@@ -40,10 +38,10 @@ public class NoticeController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Map<String, String>> deleteNotice(@PathVariable Long id) {
+    public ResponseEntity<Map<String, Object>> deleteNotice(@PathVariable Long id) {
         noticeService.deleteNotice(id);
-        Map<String, String> response = new HashMap<>();
-        response.put("success", "true");
+        Map<String, Object> response = new HashMap<>();
+        response.put("success", true);
         response.put("message", "Notice deleted successfully");
         return ResponseEntity.ok(response);
     }

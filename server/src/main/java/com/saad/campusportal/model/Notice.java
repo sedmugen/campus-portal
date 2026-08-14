@@ -1,6 +1,8 @@
 package com.saad.campusportal.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,10 +20,14 @@ public class Notice {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @NotBlank(message = "Notice title cannot be blank")
+    @Size(max = 150, message = "Notice title must not exceed 150 characters")
+    @Column(nullable = false, length = 150)
     private String title;
 
-    @Column(nullable = false, length = 1000)
+    @NotBlank(message = "Notice message cannot be blank")
+    @Size(max = 2000, message = "Notice message must not exceed 2000 characters")
+    @Column(nullable = false, length = 2000)
     private String message;
 
     @Column(nullable = false)
